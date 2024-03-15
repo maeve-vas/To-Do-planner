@@ -1,0 +1,191 @@
+
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    height: 100vh;
+       background: url('c.gif') center 80%/cover no-repeat fixed;
+  }
+  
+
+.container {
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  background: rgb(23 21 88 / 38%);
+  border-radius: 25px;
+  min-width: 450px;
+  position: absolute;
+  min-height: 100px;
+  transform: translate(-50%, -50%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Step 2: CSS*/
+#newtask {
+  position: relative;
+  padding: 30px 20px;
+}
+#newtask h3 {
+  color: #ffffff; /* Set the title color to white */
+  text-align: center; /* Center-align the title */
+  margin-bottom: 35px; /* Adds space below the title */
+}
+#newtask input {
+  width: 75%;
+  height: 45px;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 15px;
+  font-size: 15px;
+  border: 2px solid #371389;
+}
+
+#newtask input:focus {
+  outline: none;
+  border-color: #f8cdff;
+}
+#newtask button {
+  position: relative;
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #260098a8;
+  border: white;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+  height: 45px;
+  border-radius: 15px;
+}
+
+/*Step 3: CSS*/
+#tasks {
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  
+  padding: 30px 20px;
+  margin-top: 10px;
+}
+
+.task {
+  border-radius: 25px;
+  align-items: center;
+  border: 1.5px solid #4a008a;
+  cursor: pointer;
+  background-color: #ffffff;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  line-height: 35px;
+  /*justify-content: space-between;
+  display: flex;*/
+}
+.task span {
+  font-size: 15px;
+  font-weight: 400;
+}
+.task .button.edit {
+    background-color: white;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 30px; /* Adjust the height as needed */
+    width: 30px; /* Adjust the width as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 5px;
+    text-align: center;
+    float: right; /* Align to the right */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.task .button.delete{
+    background-color: white;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 30px; /* Adjust the height as needed */
+    width: 30px; /* Adjust the width as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 5px;
+    text-align: center;
+    float: right; /* Align to the right */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.task .button.edit:hover {
+    background-color: #dbc1fb; /* Change the background color on hover */
+    color: #ffffff; /* Change the text color on hover */
+}
+
+.task .button.delete:hover {
+    background-color: #dbc1fb; /* Change the background color on hover */
+    color: #ffffff; /* Change the text color on hover */
+}
+
+
+.task .button::before {
+  font-family: 'Font Awesome 5 Free';
+}
+
+.task .button.edit::before {
+  content: "\1F58B"; /* Unicode for the pen icon (FontAwesome) */
+}
+
+.task .button.delete::before {
+  content: "\1F5D1 "; /* Unicode for the trash icon (FontAwesome) */
+}
+
+.task .button.edit {
+  color: #dddddd; /* Set the color for the edit icon */
+}
+
+
+/* Alert Messages  */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.alert .close {
+  cursor: pointer;
+  float: right;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+  text-decoration: none !important;
+  font-size: 18px;
+  line-height: 1.2;
+  position: relative;
+  top: -2px;
+  right: -10px;
+  color: inherit;
+}
